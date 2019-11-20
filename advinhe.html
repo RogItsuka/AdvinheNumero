@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=devicde-width, initial-scale=1.0">
+<title> Advinhe </title>
+
+<script type="text/javascript">
+    
+var emJogo = 'sim'
+while(emJogo == 'sim'){
+	
+var num = Math.random() * 100;
+        
+var num = num.toFixed();
+  
+var tentativas = 5;      
+        
+var digitado ='';      
+digitado = prompt("Esse advinhe o numero é de 0 a 100 \n Boa Sorte!");
+
+        
+
+while(digitado != num && tentativas != 0) {
+            
+ if(digitado < num) {
+               
+digitado = prompt("Digite um valor maior!")
+
+tentativas-- }
+           
+ else if(digitado > num) {
+                
+digitado = prompt("Digite um valor menor!")
+tentativas--
+ } 
+ 
+ 
+ }
+   
+if(digitado == num) {
+   digitado = prompt("Parabens Guerreiro! o Numero era " + num + " e lhe sobraram " + tentativas + " tentativas, nada mal :D");
+    }
+else  {
+emJogo = prompt(" Lamento você esgotou suas tentativas, digite 'sim' para tentar novamente!!!");
+	}
+	}
+
+	</script>
+<head> 
+</head>
+<body>
+</body>
+</html>
