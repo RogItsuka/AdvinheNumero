@@ -1,1 +1,2 @@
 # AdvinheNumero
+Aqui temos um jogo simples de Advinhar o Numero, você tem tentativas para advinhar um numero de 0 a 100 escolhido de maneira random, caso perca todas suas tentativas digite "sim" para tentar novamente.
